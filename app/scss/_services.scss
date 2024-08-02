@@ -1,0 +1,133 @@
+.services {
+    padding: 4rem 0;
+    background: #f1f9ff;
+}
+.services__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #170f49;
+}
+.services__text {
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #6f6c90;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.tabs__inner{
+    width: 35%;
+}
+.tabs__item {
+    padding: 4rem;
+    box-shadow: 8px 8px 24px 0 rgba(2, 2, 70, 0.05);
+    background: #fff;
+    border-radius: 30px;
+}
+.tabs__item-btn {
+    position: relative;
+    margin-bottom: 2.5rem;
+    margin-left: 1.5rem;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    cursor: pointer;
+}
+.tabs__item-btn::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url('../images/about/steeo-icon.png');
+    top: -4px;
+    left: -4rem;
+}
+.tabs__item-btn--active {
+    color: #020246;
+    font-weight: 700;
+}
+.tabs__item-btn.tabs__item-btn--active.tabs__item-btn::before{
+    background: url('../images/about/Content.png') no-repeat;
+    background-position: center;
+}
+.tabs__wrapper{
+    padding: 4rem;
+    box-shadow: 8px 8px 24px 0 rgba(2, 2, 70, 0.05);
+    background: #fff;
+    border-radius: 30px;
+}
+.tabs__content {
+    width: 65%;
+  
+}
+.tabs__content-title {
+    margin-bottom: 3rem;
+    font-weight: 500;
+    color: #101828;
+}
+.tabs__content-text {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #020246;
+    border: 1px solid #e4e7ec;
+    border-radius: 8px;
+}
+.tabs__content-text span{
+    display: block;
+    font-weight: 400;
+}
+.tabs__content-subtitle {
+    margin-bottom: 3rem;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #667085;
+}
+.tabs__list {
+    margin-bottom: 20px;
+}
+.tabs__list-item {
+    margin: 0 0 10px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    list-style: disc;
+    color: #020246;  
+}
+.tabs__elem {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.tabs__elem p,
+.tabs__elem span{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #020246;  
+}
+.tabs__elem:nth-child(even){
+    background: #f9fafb;
+    border: 1px solid #f2f4f7;
+    border-radius: 8px;
+}
+.tabs__elem:nth-child(1){
+    background: none;
+    border: none;
+}
+.tabs__elem:nth-child(1) span,
+.tabs__elem:nth-child(1) p{
+    font-weight: 700;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

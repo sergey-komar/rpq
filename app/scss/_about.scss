@@ -1,0 +1,122 @@
+.about-heading {
+    padding: 8rem 0;
+    background: #f1f9ff;
+}
+.about-heading__box-subtitle {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+
+
+//GOALS
+.goals {
+    padding: 6rem 0;
+}
+.goals__title {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.goals-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+.goals-block__item {
+    padding: 2rem;
+    width: calc(100% / 3 - 1.5rem);
+    border: 1px solid #e1e1e1;
+    border-radius: 16px;
+}
+.goals-block__item-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2rem;
+}
+.goals-block__item-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #222;
+}
+.goals-block__item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+    opacity: .7;
+}
+.goals-block__item:nth-child(2){
+    background: #0085ff;
+}
+.goals-block__item:nth-child(2) .goals-block__item-title{
+    color: #fff;
+}
+.goals-block__item:nth-child(2) .goals-block__item-text{
+    color: #fff;
+    opacity: .7;
+}
+
+
+//TASKS
+.tasks {
+    padding: 4rem;
+    background: #473bf0;
+}
+.tasks-block {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.tasks-block__title {
+    width: 22%;
+    color: #fff;
+}
+.tasks-block__content {
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.tasks-block__item {
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 2rem;
+    width: calc(100% / 2 - 1rem);
+}
+.tasks-block__item:nth-child(7){
+    margin-bottom: 0;
+}
+.tasks-block__item-img {
+    min-width: 25px;
+    height: 25px;
+}
+.tasks-block__item-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+
+
+// principles
+.principles{
+    padding: 6rem 0;
+}
+.principles__title {
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.principles-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.principles-block__item-img {
+    margin: 0 auto 20px auto;
+}
+.principles-block__item-text {
+    font-size: 2rem;
+}
