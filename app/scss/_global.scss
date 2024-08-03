@@ -47,3 +47,18 @@ a:hover{
 	font-size: 3.2rem;
 	line-height: 1.5;
 }
+.btn{
+	background: #0085ff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    border: none;
+    transition: all .4s ease-in;
+	border-radius: 8px;
+    box-shadow: 0 16px 24px 0 rgba(0, 133, 255, 0.16);
+}
+.btn:hover{
+	background: #1645aa;
+	transition: all .4s ease-in;
+}

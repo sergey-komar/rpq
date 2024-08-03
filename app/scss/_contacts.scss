@@ -1,0 +1,126 @@
+.contacts {
+    padding: 6rem 0;
+    background: #f1f9ff;
+}
+.contacts-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 1rem 4rem 1rem 1rem;
+    box-shadow: 0 0 60px 30px rgba(0, 0, 0, 0.03);
+    background: #fff;
+    border-radius: 10px;
+}
+.contacts-block__info {
+    width: 40%;
+    padding: 4rem;
+    background: url('../images/contacts/contacts-bg.png') no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.contacts-block__info-title {
+    margin-bottom: 15rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.contacts-block__info-text {
+    display: block;
+    position: relative;
+    margin: 0 0 20px 35px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #fff;
+}
+.contacts-block__info-text::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    left: -35px;
+    top: 0;
+}
+.phone::before {
+    background: url('../images/contacts/bxs_phone-call.svg') no-repeat;
+}
+.email::before {
+    background: url('../images/contacts/ic_sharp-email.svg') no-repeat;
+}
+.address::before {
+    background: url('../images/contacts/carbon_location-filled.svg') no-repeat;
+}
+.contacts-block__social {
+    margin-top: 12rem;
+    display: flex;
+    gap: 2rem;
+}
+.contacts-block__form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+.contacts-block__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contacts-block__item {
+    margin-bottom: 2rem;
+    width: calc(100% / 2 - 1rem); 
+}
+.contacts-block__item span{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.contacts-block__form-input,
+.contacts-block__textarea {
+    width: 100%;
+    padding: .5rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8d8d8d;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #8D8D8D;  
+}
+.contacts-block__form-input:focus,
+.contacts-block__textarea:focus{
+   outline: none;
+}
+.contacts-block__form-input::placeholder,
+.contacts-block__textarea::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    color: #8d8d8d;
+}
+.contacts-block__item--texarea{
+    margin-top: 5rem;
+    margin-bottom: 0;
+    width: 100%;
+}
+.contacts-block__textarea {
+    resize: none;
+}
+.contacts-block__btn {
+   margin: auto 0 3rem auto;
+    width: 135px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 16px 24px 0 rgba(0, 133, 255, 0.16);
+    background: #0085ff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    border: none;
+    transition: all .4s ease-in;
+}
+.contacts-block__btn:hover{
+    background: #1645aa;
+    transition: all .4s ease-in;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPQ</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container-header">
+      <div class="header__inner">
+        <a href="./index.html" class="logo">
+          <img src="./images/home/logo-header.svg" alt="img">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a class="menu__list-item--active" href="#">Главная</a></li>
+            <li><a href="#">Реестр</a></li>
+            <li><a href="#">Архив</a></li>
+            <li><a href="#">НПА</a></li>
+            <li><a href="./about.html">О центре</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Новости</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__box">
+          <div class="header__languages">
+            <a href="#" class="header__languages-link">каз</a>
+            <a href="#" class="header__languages-link header__languages-link--active">рус</a>
+          </div>
+          <a href="./services.html" class="header__box-link">Пройти сертификацию</a>
+        </div>
+
+        <div class="nav-icon">
+          <div class="nav-icon__middle"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+ 
+  <main class="main">
+      <section class="contacts">
+        <div class="container">
+            <div class="contacts-block">
+                <div class="contacts-block__info">
+                    <div class="contacts-block__info-title">Контакты</div>
+                    <a href="tel:+77172768562" class="contacts-block__info-text phone">
+                        +7 7172 76-85-62
+                    </a>
+                    <a href="tel:+77172768561" class="contacts-block__info-text">
+                        <span>Fax:</span>
+                        +7 7172 76-85-61
+                    </a>
+                    <a href="mailto:demo@gmail.com" class="contacts-block__info-text email">
+                        demo@gmail.com
+                    </a>
+                    <p class="contacts-block__info-text address">
+                        г.Астана, пр. Б.Момышулы, 2, ВП 4В телефоны: +7 7172 76-85-62, Fax:+7 7172 76-85-61 www.
+                    </p>
+
+                    <div class="contacts-block__social">
+                        <a href="#" class="contacts-block__social-link">
+                            <img src="./images/contacts/tg.svg" alt="img">
+                        </a>
+                        <a href="#" class="contacts-block__social-link">
+                            <img src="./images/contacts/pint.svg" alt="img">
+                        </a>
+                        <a href="#" class="contacts-block__social-link">
+                            <img src="./images/contacts/int.svg" alt="img">
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contacts-block__form">
+                    <div class="contacts-block__top">
+                        <div class="contacts-block__item">
+                            <span>Имя</span>
+                            <input type="text" class="contacts-block__form-input">
+                        </div>
+                        <div class="contacts-block__item">
+                            <span>Фамилия</span>
+                            <input type="text" class="contacts-block__form-input">
+                        </div>
+                        <div class="contacts-block__item">
+                            <span>Email</span>
+                            <input type="text" class="contacts-block__form-input">
+                        </div>
+                        <div class="contacts-block__item">
+                            <span>Номер</span>
+                            <input type="text" id="input-mask" class="contacts-block__form-input">
+                        </div>
+                    </div>
+
+                    <div class="contacts-block__item contacts-block__item--texarea">
+                        <span>Сообщение</span>
+                        <textarea class="contacts-block__textarea"></textarea>
+                    </div>
+                   
+                   <button class="contacts-block__btn">Связаться</button>
+                </form>
+            </div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#" class="footer__logo">
+          <img src="./images/home/footer-logo.svg" alt="img">
+        </a>
+  
+        <div class="footer-menu">
+          <ul class="footer-menu__list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Реестр </a></li>
+            <li><a href="#">Архив</a></li>
+          </ul>
+          <ul class="footer-menu__list">
+            <li><a href="#">НПА</a></li>
+            <li><a href="#">О центре</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer__arrows">
+          <img src="./images/home/arrow-top.svg" alt="img">
+        </div>
+      </div>
+     
+      <div class="footer-bottom">
+        <p class="footer-bottom__text">© 2020 Lift Media. All rights reserved.</p>
+        <div class="footer-bottom__info">
+          <div class="footer-bottom__contact">
+            <span class="footer-bottom__contact-text"> телефон:</span>
+            <a href="tel:+77172768562" class="footer-bottom__contact-link">+7 7172 76-85-62</a>
+          </div>
+          <div class="footer-bottom__contact">
+            <span class="footer-bottom__contact-text">Fax:</span>
+            <a href="mailto:+77172768561" class="footer-bottom__contact-link">+7 7172 76-85-61</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  
+
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
