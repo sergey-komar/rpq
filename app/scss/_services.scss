@@ -42,9 +42,10 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: url('../images/about/steeo-icon.png');
+    background: url('../images/about/steeo-icon.png') no-repeat;
     top: -4px;
     left: -4rem;
+    background-position: center;
 }
 .tabs__item-btn--active {
     color: #020246;
@@ -68,6 +69,7 @@
     margin-bottom: 3rem;
     font-weight: 500;
     color: #101828;
+    line-height: 1.4;
 }
 .tabs__content-text {
     padding: 1.5rem;
