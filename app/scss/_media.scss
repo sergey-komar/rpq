@@ -348,4 +348,22 @@
         left: -1.5rem;
         top: 2px;
     }
+    .news-box__item-img{
+        margin-bottom: 10px;
+    }
+    .registry-block__elem--date{
+        position: relative;
+    }
+    .registry-block__elem--date::before{
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 25px;
+        top: 35px;
+        left: 8px;
+        background: url('../images/home/calendar.svg') no-repeat;
+    }
+    .registry-block__elem--date .registry-block__elem-input{
+        padding-left: 4rem;
+    }
 }

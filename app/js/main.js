@@ -5,6 +5,8 @@ $(function () {
         arrows:false,
         dots: true
      });
+
+   
 })
 
 
@@ -85,6 +87,49 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if(element){
         var mask = IMask(element, maskOptions);
+    }
+
+
+    const tabsItem1 = document.querySelector('.tabs-registration__item');
+    const tabsItemBtn1 = document.querySelectorAll('.tabs-registration__item-btn');
+    const tabsContent1 = document.querySelectorAll('.tabs-registration__content');
+
+    function tabsHide1(){
+        tabsContent1.forEach(item => {
+            item.classList.add('hide-registration');
+            item.classList.remove('show-registration');
+        });
+
+        tabsItemBtn1.forEach(btn =>{
+            btn.classList.remove('tabs-registration__item-btn--active');
+        })
+    }
+    function tabsShow1(i){
+        tabsContent1[i].classList.add('show-registration');
+        tabsContent1[i].classList.remove('hide-registration');
+        tabsItemBtn1[i].classList.add('tabs-registration__item-btn--active');
+    }
+
+
+    if(tabsItem1 && tabsItemBtn1 && tabsContent1){
+        tabsItem1.addEventListener('click', (e)=>{
+            const target = e.target;
+            
+            if(target && target.classList.contains('tabs-registration__item-btn')){
+                tabsItemBtn1.forEach((item, i)=>{
+                    if(target == item){
+                        tabsHide1();
+                        tabsShow1(i);
+                    }
+                
+                })
+            
+            }
+        })
+    
+        tabsHide1();
+        tabsShow1(0);
+    
     }
    
    

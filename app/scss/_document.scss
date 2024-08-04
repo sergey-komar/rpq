@@ -1,0 +1,270 @@
+.tabs-registration{
+    padding: 3rem 0;
+    background: #f1f9ff;
+}
+.tabs-registration__block {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+   
+}
+.tabs-registration__inner {
+    width: 40%;
+}
+.tabs-registration__item-btn {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.tabs-registration__item-btn--active {
+    background-color: #fff;
+}
+.tabs-registration__content {
+    width: 60%;
+}
+.tabs-registration__wrapper {
+    padding: 3rem 4rem;
+    border-radius: 12px;
+    background-color: #fff;
+}
+.tabs-registration__content-title {
+    margin-bottom: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.tabs-registration__box-item {
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.tabs-registration__box-item:last-child{
+    margin-bottom: 0;
+}
+.tabs-registration__box-title{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #170f49;
+}
+.tabs-registration__box-img{
+    position: relative;
+    min-width: 32px;
+}
+.tabs-registration__box-img::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 55px;
+    top: 41px;
+    left: 0;
+    background: url('../images/home/trail.svg') no-repeat;
+}
+.tabs-registration__box-item:last-child .tabs-registration__box-img::before{
+    display: none;
+}
+.tabs-registration__content-subtitle {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #170f49;
+}
+.tabs-registration__content-text{
+    margin-bottom: 20px;
+}
+.tabs-registration__content-text,
+.tabs-registration__list-item {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #170f49;
+}
+.tabs-registration__list-item {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    list-style: disc;
+}
+.tabs-registration__list-item:last-child{
+    margin-bottom: 20px;
+}
+.show-registration{
+    display: block;
+}
+.hide-registration{
+    display: none;
+}
+
+
+
+//DOCUMENT
+.document{
+    padding: 0rem 0 3rem 0;
+    background: #f1f9ff;
+}
+.document-block {
+    padding: 2rem 3rem;
+    background: #fffbeb;
+    border-radius: 12px;
+}
+.document-block__wrapper{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.document-block__left {
+    width: 50%;
+}
+.document-block__left-title {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #f59e0b;
+}
+.document-block__left-subtitle {
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #3c4257;
+}
+.document-block__list-item {
+    margin-left: 20px;
+    font-weight: 500;
+    list-style: disc;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #3c4257;
+}
+.document-block__right {
+    width: 50%;
+}
+.document-bottom .document-block__left-subtitle{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #f59e0b;
+}
+
+
+
+//REGISTRATION
+.registration{
+    padding: 0rem 0 3rem 0;
+    background: #f1f9ff;
+}
+.registration-form {
+    padding: 4rem;
+    border-radius: 12px;
+    background-color: #fff;
+}
+.registration-form__inner{
+    display: flex;
+    gap: 8rem;
+    justify-content: space-between;
+}
+.registration-form__left {
+    width: 50%;
+}
+.registration-form__left-title {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #170f49;
+}
+.registration-form__item {
+    margin-bottom: 20px;
+}
+.registration-form__item span{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #71717a;
+}
+.registration-form__item-input {
+    padding: 1.5rem 1rem;
+    width: 100%;
+    border: 1px solid #d4d4d8;
+    border-radius: 12px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #18181b;
+}
+.registration-form__item-input::placeholder{
+    font-size: 16px;
+    color: #71717a;
+  
+}
+.registration-form__item-select {
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    border: 1px solid #d4d4d8;
+    border-radius: 12px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #71717a;
+}
+.registration-form__item-select:focus{
+    outline: 1px solid #0085ff;
+}
+.registration-form__right {
+    width: 50%;
+}
+.registration-form__right .registration-form__item-input{
+    padding: 1.4rem 1rem;
+}
+.registration-form__label{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #d4d4d8;
+    border-radius: 12px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #71717a;
+}
+.registration-form__item-file{
+    position: relative;
+    width: 51%;
+}
+.registration-form__item-file::after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    right: -11px;
+    background: url('../images/home/file.png') no-repeat;
+}
+.registration-form__item-file.obrazovanie.registration-form__item-file::after{
+    background: url('../images/home/obrazovanie.png') no-repeat;
+}
+.registration-form__item-file.delete.registration-form__item-file::after{
+    background: url('../images/home/delet.png') no-repeat;
+}
+.registration-form__label strong{
+    font-weight: 400;
+}
+input[type="file"],
+::-webkit-file-upload-button{
+    background-color: transparent !important;
+    border: none;
+    font-size: 14px;
+}
+.registration-form__label--color{
+    border: 1px solid #009951;
+}
+.registration-form-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5rem 0 0 auto;
+}
