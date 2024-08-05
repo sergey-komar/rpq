@@ -1,3 +1,17 @@
+@media(max-width: 1200px){
+    .registration-form__inner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .registration-form__left-title{
+        text-align: center;
+    }
+    .registration-form-btn{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
 @media(max-width: 1100px){
     html{
         font-size: 9px;
@@ -22,6 +36,51 @@
     .tasks-block__title {
         text-align: center;
     }
+    .registration--modal .registration-form__inner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .registration--modal .registration-form{
+        padding: 1.5rem;
+        padding-bottom: 0;
+    }
+    .registration--modal{
+        width: 600px;
+    }
+    .registration--modal .registration-form__left,
+    .registration--modal .registration-form__right{
+        width: 100%;
+    }
+    .registration--modal .registration-form__item{
+        margin-bottom: 10px;
+    }
+    .registration--modal .registration-form__item span,
+    .registration--modal .registration-form__label,
+    .registration--modal .registration-form__item-select{
+        font-size: 15px;
+    }
+    .registration--modal .registration-form__left-title{
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    .registration--modal .registration-form-btn{
+        margin-top: 5px;
+    }
+    .registration-form__label strong{
+        display: none;
+    }
+    .registration--modal .registration-form__item-file{
+        width: 100%;
+    }
+    .registration--modal .registration-form-btn,
+    .registration-form__item-file{
+        width: 100%;
+    }
+    .registration-form__inner{
+        gap: 0rem;
+    }
+
 
     
 }
@@ -76,6 +135,30 @@
     }
     .tabs__item {
         padding: 3rem;
+    }
+    .document-block__wrapper,
+    .tabs-registration__block{
+        flex-direction: column;
+    }
+    .document-block__left,
+    .document-block__right,
+    .tabs-registration__inner,
+    .tabs-registration__content{
+        width: 100%;
+    }
+    .tabs-registration__item{
+        overflow-x: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    .tabs-registration__item-btn{
+        min-width: 205px;
+        padding: 10px;
+        margin-bottom: 0;
+        font-size: 15px;
+        line-height: 1.1;
     }
 }
 
@@ -365,5 +448,58 @@
     }
     .registry-block__elem--date .registry-block__elem-input{
         padding-left: 4rem;
+    }
+    .registration--modal{
+        width: 320px;
+    }
+    .registration--modal .registration-form{
+        padding: 0;
+        padding-top: 10px;
+    }
+    .registration-form__item-file::after{
+        display: none;
+    }
+    .tabs-registration{
+        padding: 0 0 3rem 0;
+    }
+    .registration-form__left,
+    .registration-form__right,
+    .registration-form-btn{
+        width: 100%;
+    }
+    .registration-form,
+    .tabs-registration__wrapper,
+    .document-block{
+        padding: 2rem;
+    }
+    .document-block__left-subtitle{
+        margin-bottom: 5px;
+    }
+    .tabs-registration__content-title{
+        margin-bottom: 2rem;
+        font-size: 24px;
+    }
+    .tabs-registration__box-title{
+        font-size: 16px;
+    }
+    .tabs-registration__box-img img{
+        width: 20px;
+        height: 20px;
+    }
+    .tabs-registration__box-item{
+        margin-bottom: 3rem;
+    }
+    .tabs-registration__block{
+        gap: 1rem;
+    }
+    .tabs-registration__box-img::before{
+        left: -6px;
+        top: 25px;
+    }
+    .tabs-registration__content-title{
+        font-size: 20px;
+    }
+    .upload-block{
+        max-width: 320px;
     }
 }
