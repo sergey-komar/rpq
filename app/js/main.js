@@ -5,7 +5,10 @@ $(function () {
         arrows:false,
         dots: true
      });
-
+     $('.input-file input[type=file]').on('change', function(){
+        let file = this.files[0];
+        $(this).closest('.input-file').find('.input-file-text').html(file.name);
+    });
     
 })
 
@@ -14,6 +17,14 @@ $(function () {
 
 window.addEventListener('DOMContentLoaded', () => {
 
+    const file = document.querySelectorAll('.input-file-btn');
+
+        file.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('file-hidden');
+            })
+        })
+    
 
     const menu = document.querySelector('.menu');
     const mobile = document.querySelector('.nav-icon');
