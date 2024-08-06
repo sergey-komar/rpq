@@ -6,7 +6,7 @@ $(function () {
         dots: true
      });
 
-   
+    
 })
 
 
@@ -81,12 +81,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Маска для Инпута
     var element = document.getElementById('input-mask');
+    var element1 = document.getElementById('input-mask1');
+    var element2 = document.getElementById('input-mask2');
     var maskOptions = {
         mask: '+{7}(000)000-00-00'
     };
 
     if(element){
         var mask = IMask(element, maskOptions);
+    }
+    if(element1){
+        var mask = IMask(element1, maskOptions);
+    }
+    if(element2){
+        var mask = IMask(element2, maskOptions);
     }
 
 
