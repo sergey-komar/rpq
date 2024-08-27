@@ -1,23 +1,30 @@
 .header__inner {
     padding: 10px 0;
     display: flex;
+    margin-bottom: 20px;
     justify-content: space-between;
     align-items: center;
 }
-
+.logo{
+    width: 320px;
+}
 .header {
     background: #f1f9ff;
 }
 .menu__list {
     display: flex;
     gap: 3rem;
+    justify-content: space-between;
 }
 .menu__list li a{
     font-size: 16px;
     font-weight: 600;
+    color: #fff;
+    border-bottom: 2px solid transparent;
 }
 .menu__list li a:hover{
-    color: #0085ff;
+    border-bottom: 4px solid #fff;
+    transition: all .3s ease-in;
 }
 .menu__list-item--active{
     position: relative;
@@ -26,10 +33,10 @@
     position: absolute;
     content: '';
     width: 18px;
-    height: 4px;
+    height: 3px;
     left: 0;
-    bottom: -7px;
-    background: #0085ff;
+    bottom: -4px;
+    background: #fff;
 }
 .header__box {
     display: flex;
@@ -62,4 +69,8 @@
 }
 .header__box-link:hover{
     background: #1645aa;
+}
+.header-bottom{
+    padding: 15px 0;
+    background: #0085ff;
 }

@@ -5,6 +5,108 @@ $(function () {
         arrows:false,
         dots: true
      });
+
+
+     $('.heading-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        appendArrows: '.heading__arrows',
+        responsive: [
+            {
+              breakpoint: 550,
+              settings: {
+                arrows: false,
+                dots: true
+              }
+            },
+          
+          ]
+     });
+
+     $('.news-box').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
+              }
+            },
+          
+          ]
+          
+
+       
+     });
+
+
+
+     $('.partners-slider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1150,
+              settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+              }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1,
+                }
+              },
+            {
+                breakpoint: 650,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                }
+              },
+            {
+                breakpoint: 550,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+              },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true
+                }
+              },
+          ]
+     });
+
+     
+
      $('.input-file input[type=file]').on('change', function(){
         let file = this.files[0];
         $(this).closest('.input-file').find('.input-file-text').html(file.name);

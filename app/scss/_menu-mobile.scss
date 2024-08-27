@@ -1,6 +1,8 @@
 .nav-icon{
     width: 33%;
     display: none;
+    position: relative;
+    z-index: 4;
 }
 .nav-icon__middle{
     position: relative;
@@ -47,6 +49,13 @@
 
 
 @media(max-width:800px){
+    .header-bottom{
+        background: transparent;
+        padding: 0;
+    }
+    .heading{
+        padding-top: 0;
+    }
     .menu{
         position: fixed;
         width: 100%;
@@ -59,7 +68,7 @@
         top: 0;
         transition: all .4s ease-in;
         transform: translateX(-100%);
-        z-index: 1;
+        z-index: 3;
     }
     .menu.nav--active{
         transform: translateX(0);
@@ -67,7 +76,6 @@
     .nav-icon{
         display: flex;
         justify-content: flex-end;
-        z-index: 2;
     }
     ul[class].menu__list{
         height: 100%;
@@ -84,9 +92,14 @@
     }
     .menu__list li a{
         font-size: 18px;
+        color: #000;
     }
     .logo,
     .header__box{
-        width: 33%;
+        width: auto;
+    }
+    .header__languages{
+        margin-left: 10px;
+        gap: 5px;
     }
 }
