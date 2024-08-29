@@ -11,16 +11,7 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         appendArrows: '.heading__arrows',
-        responsive: [
-            {
-              breakpoint: 550,
-              settings: {
-                arrows: false,
-                dots: true
-              }
-            },
-          
-          ]
+       
      });
 
      $('.news-box').slick({

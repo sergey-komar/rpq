@@ -191,10 +191,12 @@
         padding: 2rem 0 4rem 0;
     }
     .heading-block__title{
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 1.4;
     }
     .heading-block{
         height: 100%;
+        padding-left: 20px;
     }
     .footer__inner{
         flex-wrap: wrap;
